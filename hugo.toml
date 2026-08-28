@@ -23,3 +23,13 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
   set = "Iconoir general-purpose UI icons (Luca Burgio, MIT)"
   type = "data"
   result = "The Iconoir line icon set embedded as SVG documents keyed by the icon's own name (zoom-in, folder, undo, settings, …). Icon(name) returns the glyph or an empty string when unknown; Has and Names enumerate the set. Icons stroke in currentColor, so the renderer's ink recolours them. Pure data — it returns SVG strings and draws nothing."
+[[params.repos]]
+  name = "vscode-icons"
+  set = "vscode-icons file-type icons (Roberto Huertas, MIT)"
+  type = "data"
+  result = "A curated subset of the vscode-icons set embedded as SVG documents keyed by file name. Same small contract as seti — Icon(filename) resolves by base name then extension with a generic-document fallback, Folder() returns the folder glyph. Every embedded icon is verified to rasterise under go-gfx/gfx; icons using unsupported SVG features are omitted. Pure data — it returns SVG strings and draws nothing."
+[[params.repos]]
+  name = "devicon"
+  set = "Devicon language & tool logos (konpa, MIT)"
+  type = "data"
+  result = "Colourful programming-language and tool logos from Devicon, embedded as SVG. Unlike a file-type theme, Icon(filename) maps a source file's extension to the logo of the language it is written in (.go → Go, .py → Python, .tex → LaTeX …); unknown files and Folder() fall back to two minimal neutral glyphs. Every logo is verified to rasterise under go-gfx/gfx. Pure data — it returns SVG strings and draws nothing."
