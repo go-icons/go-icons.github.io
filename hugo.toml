@@ -18,3 +18,8 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
   set = "Material Icon Theme file-type icons (Material Extensions, MIT)"
   type = "data"
   result = "A curated subset of the Material Icon Theme embedded as SVG documents keyed by file name. Same small contract as seti — Icon(filename) resolves by base name then extension with a generic-document fallback, Folder() returns the folder glyph. Pure data — it returns SVG strings and draws nothing."
+[[params.repos]]
+  name = "iconoir"
+  set = "Iconoir general-purpose UI icons (Luca Burgio, MIT)"
+  type = "data"
+  result = "The Iconoir line icon set embedded as SVG documents keyed by the icon's own name (zoom-in, folder, undo, settings, …). Icon(name) returns the glyph or an empty string when unknown; Has and Names enumerate the set. Icons stroke in currentColor, so the renderer's ink recolours them. Pure data — it returns SVG strings and draws nothing."
