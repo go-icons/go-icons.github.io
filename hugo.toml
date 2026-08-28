@@ -1,0 +1,20 @@
+baseURL = "https://go-icons.github.io/"
+title = "go-icons"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Each repo card. "set" names the upstream free icon set and its licence.
+# "type" = data (these are pure data packages: they return SVG strings and
+# draw nothing).
+[[params.repos]]
+  name = "seti"
+  set = "Seti UI file-type icons (Jesse Weed, MIT)"
+  type = "data"
+  result = "A curated subset of the Seti UI icon set embedded as SVG documents keyed by file name. Icon(filename) matches by exact base name first (go.mod, LICENSE, .gitignore), then by extension, then falls back to a generic document; Folder() returns the folder glyph. Pure data — it returns SVG strings and draws nothing."
+[[params.repos]]
+  name = "material"
+  set = "Material Icon Theme file-type icons (Material Extensions, MIT)"
+  type = "data"
+  result = "A curated subset of the Material Icon Theme embedded as SVG documents keyed by file name. Same small contract as seti — Icon(filename) resolves by base name then extension with a generic-document fallback, Folder() returns the folder glyph. Pure data — it returns SVG strings and draws nothing."
