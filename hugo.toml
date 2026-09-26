@@ -9,6 +9,11 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
 # "type" = data (these are pure data packages: they return SVG strings and
 # draw nothing).
 [[params.repos]]
+  name = "simple-icons"
+  set = "Simple Icons brand logos (CC0-1.0)"
+  type = "data"
+  result = "The Simple Icons brand-logo set embedded as SVG and keyed by the icon's own name — Icon(\"reddit\") returns the Reddit glyph, Icon returns \"\" for an unknown name, and Has and Names enumerate the set. Unlike the file-type sets beside it this is keyed by brand rather than by file name, and it is CC0 rather than MIT. Pure data — it returns SVG strings and draws nothing."
+[[params.repos]]
   name = "seti"
   set = "Seti UI file-type icons (Jesse Weed, MIT)"
   type = "data"
