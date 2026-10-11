@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — free icon sets as embedded SVG for pure-Go UIs</title>
 <meta name="description" content="Pure-Go data packages that embed curated subsets of free, MIT-licensed icon sets — file-type icons from Seti UI (seti), the Material Icon Theme (material) and vscode-icons (vscode-icons), language logos from Devicon (devicon), and general-purpose UI icons from Iconoir (iconoir) — and serve them as SVG strings keyed by name. CGO_ENABLED=0, 100% coverage. They return SVG and draw nothing; a toolkit renderer turns the SVG into a glyph.">
 <style>
