@@ -40,16 +40,14 @@
   <div class="hero"><div class="wrap">
     <div>
       <h1 class="head">go-icons</h1>
-      <p class="sub">Free <strong>icon sets</strong> as embedded SVG for pure-Go UIs —
+      <p class="sub">Free <strong>icon sets</strong> as embedded SVG for {{ if partial "mantra-on.html" . }}Go{{ else }}pure-Go{{ end }} UIs —
       file-type icons from <code>seti</code>, <code>material</code> and <code>vscode-icons</code>,
       language logos from <code>devicon</code>, general-purpose UI icons from <code>iconoir</code> —
       each a <strong>data package</strong> that maps a name to an
       SVG glyph and <strong>draws nothing</strong>.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="https://pkg.go.dev/github.com/go-icons/seti">{{ partial "icons/book.html" . }}Documentation</a>
-        <a class="btn btn-ghost" href="https://github.com/go-icons">{{ partial "icons/github.html" . }}GitHub</a>
-      </div>
-      <div class="trust">{{ if not (partial "mantra-on.html" $) }}<span class="pill">CGO_ENABLED=0</span>{{ end }}<span class="pill">name &rarr; SVG glyph</span><span class="pill">embedded SVG via <code>go:embed</code></span><span class="pill">one repo per icon pack</span><span class="pill">100% coverage</span><span class="pill">BSD-3 code · MIT artwork</span></div>
+      {{/* [[params.cta]] in hugo.toml: the kit renders the row */}}
+      {{ partial "cta.html" . }}
+      <div class="trust">{{ if not (partial "mantra-on.html" $) }}{{ if not (partial "mantra-on.html" $) }}<span class="pill">CGO_ENABLED=0</span>{{ end }}{{ end }}<span class="pill">name &rarr; SVG glyph</span><span class="pill">embedded SVG via <code>go:embed</code></span><span class="pill">one repo per icon pack</span><span class="pill">100% coverage</span><span class="pill">BSD-3 code · MIT artwork</span></div>
     </div>
     {{ partial "hero-carousel.html" . }}
   </div></div>
